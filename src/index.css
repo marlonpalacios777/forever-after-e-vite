@@ -7,34 +7,55 @@ All colors MUST be HSL.
 */
 
 @layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+:root {
+    /* Romantic Wedding Theme */
+    --background: 30 50% 98%;
+    --foreground: 25 40% 25%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 25 40% 25%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 25 40% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 345 83% 61%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 345 100% 85%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 30 67% 94%;
+    --secondary-foreground: 25 40% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 35 44% 96%;
+    --muted-foreground: 25 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 86% 91%;
+    --accent-foreground: 25 40% 25%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 35 44% 92%;
+    --input: 35 44% 96%;
+    --ring: 345 83% 61%;
+
+    /* Custom romantic tokens */
+    --rose-gold: 15 86% 75%;
+    --champagne: 45 67% 88%;
+    --pearl: 30 33% 95%;
+    --romantic-glow: 345 100% 92%;
+
+    /* Gradients */
+    --gradient-romantic: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--rose-gold)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--pearl)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--champagne)));
+
+    /* Shadows */
+    --shadow-romantic: 0 10px 30px -10px hsl(var(--primary) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-elegant: 0 20px 60px -20px hsl(var(--rose-gold) / 0.4);
+
+    /* Transitions */
+    --transition-romantic: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
